@@ -1,0 +1,179 @@
+{
+  "piece": "檐下雨",
+  "wav_duration_s": 30.1857,
+  "peak_dbfs": -1.0,
+  "rms_dbfs": -15.54,
+  "pitch_checks": [
+    {
+      "expected_hz": 587.33,
+      "measured_hz": 587.208,
+      "error_cents": -0.36,
+      "power": 169892.14228358865,
+      "bar": 1,
+      "name": "D5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 587.33,
+      "measured_hz": 587.209,
+      "error_cents": -0.36,
+      "power": 173866.74532253295,
+      "bar": 3,
+      "name": "D5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 587.33,
+      "measured_hz": 587.207,
+      "error_cents": -0.36,
+      "power": 195515.46158211678,
+      "bar": 6,
+      "name": "D5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 698.456,
+      "measured_hz": 698.397,
+      "error_cents": -0.15,
+      "power": 506087.64316904545,
+      "bar": 9,
+      "name": "F5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 523.251,
+      "measured_hz": 522.665,
+      "error_cents": -1.94,
+      "power": 346598.7282140851,
+      "bar": 11,
+      "name": "C5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 1174.659,
+      "measured_hz": 1174.748,
+      "error_cents": 0.13,
+      "power": 129466.24365263991,
+      "bar": 12,
+      "name": "D6",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 587.33,
+      "measured_hz": 587.208,
+      "error_cents": -0.36,
+      "power": 138515.30431480706,
+      "bar": 13,
+      "name": "D5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 698.456,
+      "measured_hz": 698.506,
+      "error_cents": 0.12,
+      "power": 218187.95026562363,
+      "bar": 16,
+      "name": "F5",
+      "voice": "melody"
+    },
+    {
+      "expected_hz": 146.832,
+      "measured_hz": 146.832,
+      "error_cents": -0.0,
+      "power": 6390.488888826221,
+      "bar": 0,
+      "name": "D3",
+      "voice": "bass"
+    },
+    {
+      "expected_hz": 97.999,
+      "measured_hz": 97.999,
+      "error_cents": 0.0,
+      "power": 39124.66572713852,
+      "bar": 10,
+      "name": "G2",
+      "voice": "bass"
+    }
+  ],
+  "pause_checks": [
+    {
+      "index": 1,
+      "seconds": 0.4,
+      "ref_dbfs": -14.87,
+      "quiet_dbfs": -34.98,
+      "drop_db": 20.11
+    },
+    {
+      "index": 2,
+      "seconds": 0.9,
+      "ref_dbfs": -15.47,
+      "quiet_dbfs": -48.71,
+      "drop_db": 33.24
+    },
+    {
+      "index": 3,
+      "seconds": 1.6,
+      "ref_dbfs": -12.81,
+      "quiet_dbfs": -62.89,
+      "drop_db": 50.08
+    }
+  ],
+  "checks": [
+    {
+      "name": "RIFF 头长度自洽",
+      "ok": true,
+      "detail": "RIFF size == 文件长度 − 8"
+    },
+    {
+      "name": "PCM / 双声道 / 44.1 kHz / 16 bit",
+      "ok": true,
+      "detail": "fmt=1, ch=2, sr=44100, bits=16"
+    },
+    {
+      "name": "block_align 与 byte_rate 自洽",
+      "ok": true,
+      "detail": "block_align=4, byte_rate=176400"
+    },
+    {
+      "name": "WAV 时长与时间线一致",
+      "ok": true,
+      "detail": "WAV 30.1857s vs 时间线 30.1857s"
+    },
+    {
+      "name": "峰值接近 −1 dBFS 且未削波",
+      "ok": true,
+      "detail": "峰值 0.8910（-1.00 dBFS）"
+    },
+    {
+      "name": "整体响度合理、直流偏移可忽略",
+      "ok": true,
+      "detail": "RMS -15.54 dBFS, DC 3.74e-06"
+    },
+    {
+      "name": "10 个抽查音的音高误差 ≤ 20 音分",
+      "ok": true,
+      "detail": "最大误差 1.94 音分；D5-0.4, D5-0.4, D5-0.4, F5-0.1, C5-1.9, D6+0.1, D5-0.4, F5+0.1, D3-0.0, G2+0.0"
+    },
+    {
+      "name": "每次停顿内最安静的 100 ms 比前段音乐至少低 8 dB",
+      "ok": true,
+      "detail": "停顿1 0.4s 降 20.1 dB; 停顿2 0.9s 降 33.2 dB; 停顿3 1.6s 降 50.1 dB"
+    },
+    {
+      "name": "停顿长度递增（0.4 < 0.9 < 1.6 s）",
+      "ok": true,
+      "detail": "[0.4, 0.9, 1.6]"
+    },
+    {
+      "name": "所有音符落在曲长内，末尾留有混响尾巴",
+      "ok": true,
+      "detail": "最后音符结束 27.19s，曲长 30.19s"
+    },
+    {
+      "name": "停顿时段不与音符重叠",
+      "ok": true,
+      "detail": "停顿区间内无音符起点/时值重叠"
+    }
+  ],
+  "all_passed": true
+}

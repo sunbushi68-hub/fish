@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>檐下雨 · 本地合成小品</title>
+<style>
+  :root { --paper:#fbf8f2; --ink:#2b2a27; --muted:#8a857c; --line:#ded6c7; --accent:#b5533c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:16px/1.7 "Noto Sans CJK SC","Source Han Sans SC","PingFang SC",sans-serif; }
+  main { max-width:1080px; margin:0 auto; padding:56px 28px 72px; }
+  h1 { font-size:44px; margin:0 0 6px; letter-spacing:.06em; font-weight:600; }
+  .sub { color:var(--muted); margin:0 0 28px; font-size:14px; }
+  audio { width:100%; margin:6px 0 8px; }
+  .hint { color:var(--muted); font-size:12px; margin:0 0 36px; }
+  h2 { font-size:15px; letter-spacing:.12em; color:var(--muted); font-weight:600;
+        border-top:1px solid var(--line); padding-top:22px; margin:36px 0 14px; }
+  ul { list-style:none; padding:0; margin:0; display:grid; gap:2px; }
+  li { display:grid; grid-template-columns:74px 1fr auto; gap:12px;
+        padding:7px 10px; border-bottom:1px solid #eee8dc; font-size:14px; }
+  li.pause { color:var(--muted); background:#f4efe4; }
+  .t { font-variant-numeric:tabular-nums; color:var(--muted); }
+  .n { color:var(--muted); font-size:12px; }
+  figure { margin:18px 0 0; }
+  img { width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:4px; background:#fff; }
+  figcaption { color:var(--muted); font-size:12px; margin-top:8px; }
+  footer { margin-top:52px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:16px; }
+  a { color:var(--accent); }
+</style>
+<main>
+  <h1>檐下雨</h1>
+  <p class="sub">D 小调 · 6/8 · 附点四分音符 84 · 三次逐渐变长的停顿</p>
+  <audio controls preload="metadata" src="eaves_rain.wav">
+    你的浏览器不支持 audio 元素，请直接打开 eaves_rain.wav。
+  </audio>
+  <p class="hint">本地文件 · 30.2 秒 · 无外部素材、无联网、无账号动作</p>
+
+  <h2>结构</h2>
+  <ul><li><span class="t">0.0s</span><strong>前奏</strong><span class="n"></span></li><li><span class="t">1.4s</span><strong>A1 · 第一次陈述</strong><span class="n">Dm Bb Gm Am</span></li><li class="pause"><span class="t">7.1s</span><strong>停顿 0.4s</strong><span class="n">留白</span></li><li><span class="t">7.5s</span><strong>A2 · 应答</strong><span class="n">Dm Bb Gm Dm</span></li><li class="pause"><span class="t">13.3s</span><strong>停顿 0.9s</strong><span class="n">留白</span></li><li><span class="t">14.2s</span><strong>B · 抬起来</strong><span class="n">Bb Gm Am Dm</span></li><li class="pause"><span class="t">19.9s</span><strong>停顿 1.6s</strong><span class="n">留白</span></li><li><span class="t">21.5s</span><strong>A′ · 回来</strong><span class="n">Dm Bb Gm Dm</span></li></ul>
+
+  <h2>钢琴卷帘</h2>
+  <figure>
+    <img src="score.svg" alt="钢琴卷帘：旋律、低音与三次停顿">
+    <figcaption>橙色为旋律，蓝绿色为低音；灰色竖条是三次逐渐变长的停顿。</figcaption>
+  </figure>
+
+  <h2>波形</h2>
+  <figure>
+    <img src="waveform.svg" alt="整曲波形包络">
+    <figcaption>逐列 min/max 包络，只说明响度与结构，不等于听感评价。</figcaption>
+  </figure>
+
+  <footer>
+    由 <code>piece.py</code> 用 Python 3.11 标准库合成，<code>visualize.py</code> 画图。<br>
+    这只是一个本地作品页：没有连接或发布到任何社交平台。
+  </footer>
+</main>
+</html>
