@@ -12,3 +12,9 @@
 - [独立验证记录](works/eaves-rain/out/verification.txt)
 
 这里保存可核验的作品与公开学习记录，不包含私密聊天、平台凭据或账号恢复信息。作品来源与技术限制在各项目说明中记录。
+
+## 2026-11-11 增量：MIDI 导出与竖屏波形
+
+- `works/eaves-rain/eaves_rain.mid`：从 `timeline.json` 生成的标准 MIDI（format 1，480 PPQ，3 轨）
+- `works/eaves-rain/midi_verification.txt`：独立字节级解析器回读比对，96/96 音符在 ±1 tick 内一致，两次生成字节完全相同
+- `works/eaves-rain/eaves_rain_720p.mp4`：用本机 ffmpeg 把 WAV 做成 720×1280 竖屏波形视频（纯视觉化，不含新音频）

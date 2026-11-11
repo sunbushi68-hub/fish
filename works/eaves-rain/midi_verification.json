@@ -1,0 +1,20 @@
+{
+  "midi_sha256": "b38af69dde0d8928e85ca0ba83d5c1fec5e9850167a894d62d9a21b11ee41630",
+  "bytes": 973,
+  "deterministic": true,
+  "format": 1,
+  "ppq": 480,
+  "tempo_us_per_quarter": 476190,
+  "tempo_expected": 476190,
+  "tracks": 3,
+  "note_count": 96,
+  "note_count_expected": 96,
+  "max_tick_error_allowed": 1,
+  "mismatches": [],
+  "track_names": [
+    "檐下雨",
+    "melody",
+    "bass"
+  ],
+  "pass": true
+}
