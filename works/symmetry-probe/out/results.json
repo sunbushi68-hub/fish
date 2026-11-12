@@ -1,0 +1,272 @@
+{
+  "question": "空间群判定的畸变阈值是否与 symprec 同量级？",
+  "structure": {
+    "formula": "SrTiO3",
+    "a0_A": 3.905,
+    "source": "构造的周期性 Structure，a0 为文献常用值，未联网核对"
+  },
+  "parameters": {
+    "symprec_A": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "angle_tolerance_deg": 5.0,
+    "strain_values": [
+      0.0,
+      1e-05,
+      0.0001,
+      0.001,
+      0.003,
+      0.01
+    ],
+    "displacement_A": [
+      0.0,
+      0.0001,
+      0.001,
+      0.003,
+      0.01,
+      0.03
+    ]
+  },
+  "strain_probe": {
+    "unit": "relative",
+    "values": [
+      0.0,
+      1e-05,
+      0.0001,
+      0.001,
+      0.003,
+      0.01
+    ],
+    "rows": [
+      {
+        "symprec_A": 1e-05,
+        "symbols": [
+          "Pm-3m",
+          "P4/mmm",
+          "P4/mmm",
+          "P4/mmm",
+          "P4/mmm",
+          "P4/mmm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 1e-05,
+        "predicted_break_at": 2.5608194622279135e-06
+      },
+      {
+        "symprec_A": 0.0001,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "P4/mmm",
+          "P4/mmm",
+          "P4/mmm",
+          "P4/mmm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.0001,
+        "predicted_break_at": 2.560819462227913e-05
+      },
+      {
+        "symprec_A": 0.001,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "P4/mmm",
+          "P4/mmm",
+          "P4/mmm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.001,
+        "predicted_break_at": 0.0002560819462227913
+      },
+      {
+        "symprec_A": 0.01,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "P4/mmm",
+          "P4/mmm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.003,
+        "predicted_break_at": 0.0025608194622279133
+      },
+      {
+        "symprec_A": 0.1,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": null,
+        "predicted_break_at": 0.025608194622279132
+      }
+    ]
+  },
+  "displacement_probe": {
+    "unit": "A",
+    "values": [
+      0.0,
+      0.0001,
+      0.001,
+      0.003,
+      0.01,
+      0.03
+    ],
+    "rows": [
+      {
+        "symprec_A": 1e-05,
+        "symbols": [
+          "Pm-3m",
+          "P4mm",
+          "P4mm",
+          "P4mm",
+          "P4mm",
+          "P4mm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.0001,
+        "predicted_break_at": 1e-05
+      },
+      {
+        "symprec_A": 0.0001,
+        "symbols": [
+          "Pm-3m",
+          "P4mm",
+          "P4mm",
+          "P4mm",
+          "P4mm",
+          "P4mm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.0001,
+        "predicted_break_at": 0.0001
+      },
+      {
+        "symprec_A": 0.001,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "P4mm",
+          "P4mm",
+          "P4mm",
+          "P4mm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.001,
+        "predicted_break_at": 0.001
+      },
+      {
+        "symprec_A": 0.01,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "P4mm",
+          "P4mm"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": 0.01,
+        "predicted_break_at": 0.01
+      },
+      {
+        "symprec_A": 0.1,
+        "symbols": [
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m",
+          "Pm-3m"
+        ],
+        "high_symmetry": "Pm-3m",
+        "first_break_at": null,
+        "predicted_break_at": 0.1
+      }
+    ]
+  },
+  "shear_probe": [
+    {
+      "gamma_deg": 0.01,
+      "symbol_symprec_1e-3": "Pm-3m",
+      "symbol_symprec_1e-2_at_1deg": "Pm-3m"
+    },
+    {
+      "gamma_deg": 0.1,
+      "symbol_symprec_1e-3": "Pm-3m",
+      "symbol_symprec_1e-2_at_1deg": "Pm-3m"
+    },
+    {
+      "gamma_deg": 1.0,
+      "symbol_symprec_1e-3": "Pm-3m",
+      "symbol_symprec_1e-2_at_1deg": "Cmmm"
+    },
+    {
+      "gamma_deg": 5.0,
+      "symbol_symprec_1e-3": "Cmmm",
+      "symbol_symprec_1e-2_at_1deg": "Cmmm"
+    }
+  ],
+  "threshold_over_symprec": {
+    "displacement_mean": 0.4998611450195312,
+    "displacement_std": 3.204937810639273e-17,
+    "strain_mean": 1.0001587104797365,
+    "strain_std": 1.2819751242557092e-16
+  },
+  "refined_thresholds": {
+    "displacement": {
+      "0.0001": {
+        "lo": 4.997100830078126e-05,
+        "hi": 5.000122070312501e-05,
+        "mid": 4.998611450195313e-05
+      },
+      "0.001": {
+        "lo": 0.0004997100830078124,
+        "hi": 0.00050001220703125,
+        "mid": 0.0004998611450195312
+      },
+      "0.01": {
+        "lo": 0.004997100830078125,
+        "hi": 0.0050001220703125,
+        "mid": 0.0049986114501953125
+      }
+    },
+    "strain": {
+      "0.0001": {
+        "lo": 2.560470581054688e-05,
+        "hi": 2.5619812011718756e-05,
+        "mid": 2.561225891113282e-05
+      },
+      "0.001": {
+        "lo": 0.0002560470581054688,
+        "hi": 0.00025619812011718753,
+        "mid": 0.0002561225891113282
+      },
+      "0.01": {
+        "lo": 0.0025604705810546875,
+        "hi": 0.002561981201171875,
+        "mid": 0.002561225891113281
+      }
+    }
+  },
+  "grid_note": "粗网格 6 个振幅只能确定阈值所在区间；refined_thresholds 为二分收紧后的结果。",
+  "software": {
+    "python": "3.11.13",
+    "pymatgen": "2026.9.23",
+    "spglib": "2.8.0",
+    "numpy": "2.4.6"
+  },
+  "caveat": "全部为构造结构与几何判定，不是合成、不是实验、不是 Materials Project 数据。"
+}
