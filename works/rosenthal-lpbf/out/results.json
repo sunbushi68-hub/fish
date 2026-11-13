@@ -1,0 +1,265 @@
+{
+  "model": "Rosenthal moving point source, quasi-steady, conduction only",
+  "units": "SI input, µm output",
+  "material": {
+    "k_W_mK": 7.0,
+    "rho_kg_m3": 4430.0,
+    "cp_J_kgK": 560.0,
+    "Tm_K": 1923.0,
+    "T0_K": 298.0,
+    "absorptivity": 0.4,
+    "alpha_m2_s": 2.821670428893905e-06,
+    "delta_T_K": 1625.0
+  },
+  "assumptions": [
+    "point source",
+    "isotropic k",
+    "no convection/Marangoni",
+    "no latent heat",
+    "no powder bed",
+    "no multiple reflection/keyhole",
+    "absorptivity constant"
+  ],
+  "reference_case": {
+    "P_W": 200.0,
+    "v_m_s": 1.0,
+    "depth_um": 22.139518613024926,
+    "width_um": 44.27903722604985,
+    "rear_length_um": 1119.3314678990441
+  },
+  "checks": {
+    "v0_sphere_radius": {
+      "numeric_m": 0.001119331467899044,
+      "analytic_m": 0.001119331467899044,
+      "rel_error": 0.0
+    },
+    "rear_length": {
+      "numeric_m": 0.001119331467899044,
+      "analytic_m": 0.001119331467899044,
+      "rel_error": 0.0
+    },
+    "width_equals_2depth": {
+      "depth_m": 2.2139518613024927e-05,
+      "width_m": 4.427903722604985e-05
+    },
+    "boundary_residual_K": 4.547473508864641e-13,
+    "monotonic": {
+      "P150_vs_P250": [
+        2.0853690137482574e-05,
+        2.314753017399344e-05
+      ],
+      "v0.6_vs_v1.4": [
+        3.311290307541114e-05,
+        1.6902022015971337e-05
+      ],
+      "ok": true
+    }
+  },
+  "grid": [
+    {
+      "P_W": 100.0,
+      "v_m_s": 0.6,
+      "depth_um": 28.12803679624246,
+      "width_um": 56.25607359248492,
+      "vol_energy_density_J_mm3": 5.555555555555555e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 100.0,
+      "v_m_s": 0.8,
+      "depth_um": 22.6301852239796,
+      "width_um": 45.2603704479592,
+      "vol_energy_density_J_mm3": 4.1666666666666665e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 100.0,
+      "v_m_s": 1.0,
+      "depth_um": 19.07008396787448,
+      "width_um": 38.14016793574896,
+      "vol_energy_density_J_mm3": 3.3333333333333335e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 100.0,
+      "v_m_s": 1.2,
+      "depth_um": 16.55645153770557,
+      "width_um": 33.11290307541114,
+      "vol_energy_density_J_mm3": 2.7777777777777776e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 100.0,
+      "v_m_s": 1.4,
+      "depth_um": 14.676961732298267,
+      "width_um": 29.353923464596534,
+      "vol_energy_density_J_mm3": 2.380952380952381e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 150.0,
+      "v_m_s": 0.6,
+      "depth_um": 31.02091119465831,
+      "width_um": 62.04182238931662,
+      "vol_energy_density_J_mm3": 8.333333333333333e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 150.0,
+      "v_m_s": 0.8,
+      "depth_um": 24.834677306558344,
+      "width_um": 49.66935461311669,
+      "vol_energy_density_J_mm3": 6.249999999999999e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 150.0,
+      "v_m_s": 1.0,
+      "depth_um": 20.853690137482573,
+      "width_um": 41.707380274965146,
+      "vol_energy_density_J_mm3": 5e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 150.0,
+      "v_m_s": 1.2,
+      "depth_um": 18.05562290831681,
+      "width_um": 36.11124581663362,
+      "vol_energy_density_J_mm3": 4.1666666666666665e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 150.0,
+      "v_m_s": 1.4,
+      "depth_um": 15.970821535834537,
+      "width_um": 31.941643071669073,
+      "vol_energy_density_J_mm3": 3.571428571428572e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 200.0,
+      "v_m_s": 0.6,
+      "depth_um": 33.11290307541114,
+      "width_um": 66.22580615082228,
+      "vol_energy_density_J_mm3": 0.0001111111111111111,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 200.0,
+      "v_m_s": 0.8,
+      "depth_um": 26.425937352537026,
+      "width_um": 52.85187470507405,
+      "vol_energy_density_J_mm3": 8.333333333333333e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 200.0,
+      "v_m_s": 1.0,
+      "depth_um": 22.139518613024926,
+      "width_um": 44.27903722604985,
+      "vol_energy_density_J_mm3": 6.666666666666667e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 200.0,
+      "v_m_s": 1.2,
+      "depth_um": 19.13538264867478,
+      "width_um": 38.27076529734956,
+      "vol_energy_density_J_mm3": 5.555555555555555e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 200.0,
+      "v_m_s": 1.4,
+      "depth_um": 16.902022015971337,
+      "width_um": 33.804044031942674,
+      "vol_energy_density_J_mm3": 4.761904761904762e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 250.0,
+      "v_m_s": 0.6,
+      "depth_um": 34.75615022913763,
+      "width_um": 69.51230045827526,
+      "vol_energy_density_J_mm3": 0.00013888888888888892,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 250.0,
+      "v_m_s": 0.8,
+      "depth_um": 27.67439826628116,
+      "width_um": 55.34879653256232,
+      "vol_energy_density_J_mm3": 0.00010416666666666666,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 250.0,
+      "v_m_s": 1.0,
+      "depth_um": 23.147530173993438,
+      "width_um": 46.295060347986876,
+      "vol_energy_density_J_mm3": 8.333333333333333e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 250.0,
+      "v_m_s": 1.2,
+      "depth_um": 19.981337937030236,
+      "width_um": 39.96267587406047,
+      "vol_energy_density_J_mm3": 6.944444444444446e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 250.0,
+      "v_m_s": 1.4,
+      "depth_um": 17.63124028192691,
+      "width_um": 35.26248056385382,
+      "vol_energy_density_J_mm3": 5.9523809523809524e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 300.0,
+      "v_m_s": 0.6,
+      "depth_um": 36.11124581663362,
+      "width_um": 72.22249163326724,
+      "vol_energy_density_J_mm3": 0.00016666666666666666,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 300.0,
+      "v_m_s": 0.8,
+      "depth_um": 28.70307397301217,
+      "width_um": 57.40614794602434,
+      "vol_energy_density_J_mm3": 0.00012499999999999998,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 300.0,
+      "v_m_s": 1.0,
+      "depth_um": 23.97760552443629,
+      "width_um": 47.95521104887258,
+      "vol_energy_density_J_mm3": 0.0001,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 300.0,
+      "v_m_s": 1.2,
+      "depth_um": 20.677661830199206,
+      "width_um": 41.35532366039841,
+      "vol_energy_density_J_mm3": 8.333333333333333e-05,
+      "depth_over_width": 0.5
+    },
+    {
+      "P_W": 300.0,
+      "v_m_s": 1.4,
+      "depth_um": 18.231270915281762,
+      "width_um": 36.462541830563524,
+      "vol_energy_density_J_mm3": 7.142857142857143e-05,
+      "depth_over_width": 0.5
+    }
+  ],
+  "software": {
+    "python": "3.11.13",
+    "numpy": "2.4.6"
+  },
+  "caveat": "解析基准，不是对真实熔池的预测；材料参数为常用近似值，未逐条溯源。"
+}
