@@ -1,0 +1,45 @@
+{
+  "window": [
+    1.4,
+    16.4
+  ],
+  "captions": [
+    {
+      "section": "A1",
+      "text": "A1 · 第一次陈述　Dm – Bb – Gm – Am",
+      "t0": 0.029,
+      "t1": 5.743
+    },
+    {
+      "section": "A2",
+      "text": "A2 · 应答　同样的和弦，句尾换回 Dm",
+      "t0": 6.143,
+      "t1": 11.857
+    },
+    {
+      "section": "B",
+      "text": "B · 抬起来　Bb – Gm – Am – Dm",
+      "t0": 12.757,
+      "t1": 15.0
+    }
+  ],
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "15.100000"
+    }
+  }
+}
