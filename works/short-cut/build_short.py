@@ -47,9 +47,9 @@ def main() -> None:
         lines.append((str(cap), t0, t1))
 
     filters = [
-        "color=c=0x0b1220:s=720x1280:r=30:d=15,format=rgb24[bg]",
-        "[0:a]showwaves=s=720x1280:mode=cline:colors=0x4a7fb5:rate=30,format=rgb24[wv]",
-        "[bg][wv]blend=all_mode=screen,format=yuv420p[base]",
+        "color=c=0x0b1220:s=720x1280:r=30:d=15,format=rgba[bg]",
+        "[0:a]showwaves=s=720x1280:mode=cline:colors=0xff6fa8dc:rate=30,format=rgba,colorkey=0x000000:0.12:0.0[wv]",
+        "[bg][wv]overlay,format=yuv420p[base]",
     ]
     for i, (path, t0, t1) in enumerate(lines):
         src = "base" if i == 0 else f"v{i - 1}"
