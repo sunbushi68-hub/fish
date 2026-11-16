@@ -1,0 +1,42 @@
+{
+  "melody": {
+    "section": "A1",
+    "notes": 16,
+    "seconds": 6.914
+  },
+  "timbres": {
+    "sine": {
+      "rms_dbfs": -20.0,
+      "peak_dbfs": -13.655,
+      "spectral_centroid_hz": 652.2,
+      "hf_fraction_above_2k": 0.0008,
+      "beating_depth_isolated": 0.0
+    },
+    "harm5": {
+      "rms_dbfs": -20.0,
+      "peak_dbfs": -11.324,
+      "spectral_centroid_hz": 1412.6,
+      "hf_fraction_above_2k": 0.2458,
+      "beating_depth_isolated": 0.0
+    },
+    "detune": {
+      "rms_dbfs": -20.0,
+      "peak_dbfs": -10.396,
+      "spectral_centroid_hz": 653.8,
+      "hf_fraction_above_2k": 0.001,
+      "beating_depth_isolated": 1.4749
+    }
+  },
+  "checks": {
+    "rms_match_db": 0.0,
+    "fundamental_peak_hz": 523.19,
+    "fundamental_expected_hz": 523.251,
+    "fundamental_error_hz": 0.062,
+    "centroid_harm_gt_sine": true,
+    "beating_detune_abs": true,
+    "beating_sine_near_zero": true,
+    "deterministic": true,
+    "pass": true
+  },
+  "caveat": "只测量，不评价听感；没有使用任何外部音色库或采样。"
+}
